@@ -93,10 +93,10 @@ body {
 .page-header {
 	padding-top: 24px;
 	padding-bottom: 25px;
+	border-bottom: 1px solid var(--header-wrap-color);
 }
 
 .header-wrap {
-	border-bottom: 1px solid var(--header-wrap-color);
 	display: flex;
 	align-items: center;
 }
@@ -133,16 +133,12 @@ body {
 	letter-spacing: 0.02em;
 }
 
-.link-nav.curren {
-	color: var(--primary-text-color);
+.current {
+	color: var(--acent-color);
 }
 
 .link-nav:hover,
 .link-nav:focus {
-	color: var(--acent-color);
-}
-
-.link-nav {
 	color: var(--acent-color);
 }
 
@@ -172,6 +168,7 @@ body {
 
 .hero {
 	background-color: var(--footer-bg-color);
+	margin-top: 57px;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -204,6 +201,10 @@ body {
 }
 
 /* -----ОСОБЛИВОСТІ----- */
+
+.features {
+	padding-bottom: 0;
+}
 
 .features-title {
 	color: var(--primary-text-color);
@@ -250,6 +251,9 @@ body {
 	background-color: var(--background-section);
 }
 
+.team-item {
+	background-color: var(--background-color);
+}
 .section-title {
 	font-size: 36px;
 	line-height: 1.16;
@@ -276,6 +280,7 @@ body {
 	font-size: 16px;
 	line-height: 1.18;
 	margin-top: 10px;
+	padding-bottom: 30px;
 }
 
 /* -----ПОРТФОЛІО----- */
@@ -294,7 +299,7 @@ body {
 	font-size: 16px;
 	line-height: 1.62;
 	letter-spacing: 0.03em;
-	bottom: 6px 22px;
+	padding: 6px 22px;
 	border-radius: 4px;
 }
 .button:hover,
@@ -310,16 +315,19 @@ body {
 	gap: 30px;
 }
 
-.portfolio-item {
-	border-bottom: 1px solid var(--header-wrap-color);
-}
-
 .project-title {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	margin: 20px 24px 4px;
-	width: 322px;
+	padding: 20px 24px 4px;
+	min-width: 322px;
+}
+
+.title-name {
+	border-left: 1px solid var(--header-wrap-color);
+	border-right: 1px solid var(--header-wrap-color);
+	border-bottom: 1px solid var(--header-wrap-color);
+	width: 370px;
 }
 .project-name {
 	color: var(--ouwer-text-color);
